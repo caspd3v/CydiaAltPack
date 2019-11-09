@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2196f3">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+  <title>Cydia Alt</title>
+  <link rel="stylesheet" href="css/framework7.bundle.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="icon" href="img/icon.png">
+  <style>
+
+   .page-content{
+    background-color:#fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: black;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
+  --f7-list-link-pressed-bg-color: #fff;
+  }
+  
+  .tabbar-label{
+  font-size:12px;
+  }
+
+  
+  .item-title-row{color:black;}
+
+
+  </style>
+</head>
+<body>
+  <div id="app">
+    
+    <div class="views tabs">
+      <!--
+        Tabbar for switching views-tabs. Should be a first child in Views.
+        Additional "toolbar-bottom" class to set it on bottom
+      -->
+      <div style="height:50px"class="toolbar tabbar toolbar-bottom">
+    <div style="height:50px;" class="toolbar-inner">
+      <a href="#tab-1" class="tab-link tab-link-active"><i class="icon f7-icons if-not-md">today</i> <span class="tabbar-label">Cydia</span></a>
+      <a href="#tab-2" class="tab-link"><i class="icon f7-icons if-not-md">layers_alt_fill</i><span class="tabbar-label">Sources</span></a></a>
+      <a href="#tab-3" class="tab-link"><i class="icon f7-icons if-not-md">archivebox_fill</i><span class="tabbar-label">Settings</span></a>
+       
+    </div>
+  </div>
+  
+    <div class="view view-main view-init safe-areas" data-master-detail-breakpoint="800" data-url="/">
+      <div class="page page-home">
+          
+          
+          <div class="tabs">
+    <!-- Tab 1, active by default -->
+    <div id="tab1" class="tab tab-active ">
+      <div data-page="index" class="page"> 
+      <div class="page-content">
+      
+      <h1 style="font-size:40px;margin-left:5%;margin-top:20px;">Cydia</h1>
+
+
+
+
+
+</div>
+</div>
+    </div>
+
+    <!-- Tab 2 -->
+    <div id="tab2" class="tab">
+      <div data-page="index" class="page"> 
+      <div class="page-content">
+      
+      <h1 style="font-size:40px;margin-left:5%;margin-top:20px;">Sections</h1>
+
+      
+
+
+</div>
+</div>
+    </div>
+
+    <!-- Tab 3 -->
+    <div id="tab3" class="tab">
+      <div data-page="index" class="page"> 
+      <div class="page-content">
+      
+      <h1 style="font-size:40px;margin-left:5%;margin-top:20px;">Settings</h1>
+
+
+
+
+
+</div>
+</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+  <script src="js/framework7.bundle.js"></script>
+  <script src="js/routes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
